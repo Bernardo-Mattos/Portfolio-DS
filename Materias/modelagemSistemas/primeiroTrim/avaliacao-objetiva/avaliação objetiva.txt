@@ -1,0 +1,20 @@
+Alunos desatentos durante as aulas: 
+
+Criação de um aplicativo para o controle de um professor dentro de uma sala em que ele poderá chamar a atenção dos alunos através de um sistema de controle de sala de aula, onde o professor terá a opção de mandar mandar mensagens, fazer ligações, anotações sobre os alunos, agendar provas e atividades e etc; 
+	O app terá uma aba somente para o professor marcar a data de entrega das atividades, marcar provas, um chat com o aluno privado ao professor, aluno e a coordenação.
+	Depois do app instalado durante o horário de aula ele seria a única coisa que seu celular irá abrir tirando recreios, quando acabasse a aula seu celular funcionaria livremente, isso serviria para evitar a desatenção dos alunos e que eles não percam nenhuma atividade e até mesmo veja se algum professor o chamou a atenção. 
+Todos os pais vão passar por uma aula teste para entender e ver como funciona esse app,depois dessa aula teste tem uma votação e se a maioria concorda o app entraria em uso para combater a desatenção dos alunos.
+O app também teria um sistema de média da atenção da turma para cada aluno se comparar e perceber se está abaixo da média ou não, assim melhorando a sua média.
+
+- calendário com prazos de atts e provas
+- rotina de aulas semanais
+- chat entre professor e aluno
+- aba pedagógica para professor falar mal de aluno ;-;
+- rascunho de anotações 
+- relatório de notas 
+- controle de turmas e alunos para professores
+- professor poderá fazer ligações para alunos durante a aula
+- monitoramento de aluno durante a sala de aula
+- fazer celular de aluno vibrar
+- dashboard de desempenho do aluno
+

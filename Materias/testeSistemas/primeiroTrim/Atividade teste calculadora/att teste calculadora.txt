@@ -1,0 +1,20 @@
+Nossa CALCULADORA (dupla 11)
+https://github.com/NatHanzMedeiros/calc
+Inserimos o erro na hora de fazer a divisão. Onde ao invés de ele dividir um número por outro, ele está se dividindo por ele mesmo.
+public void dividir(View v) {
+   int valor1 = Integer.parseInt(n1.getText().toString());
+   int valor2 = Integer.parseInt(n1.getText().toString());
+
+   result.setText(String.valueOf(valor1/valor2));
+
+ANÁLISE CALCULADORA (dupla 4)
+O erro está no campo de multiplicação, pois quando se clica no botão de multiplicar sem atribuir nenhum número, ele crasha o app. Isso porque no código do botão multiplicar não colocaram.
+
+catch(Exception e){
+   Toast.makeText(this, "Insira um valor Valido", Toast.LENGTH_LONG).show();}
+
+1- Testar os campos colocando números positivos e negativos. //Sucesso
+2- Testar os campos colocando números com vírgula //Sucesso
+3- Testar os campos colocando valores nulos (nada) //Falha na multiplicação (explicado acima)
+4- Dividir 10 por 7 //Sucesso (1,4285)
+5- E dividir 0 por 10 // Sucesso

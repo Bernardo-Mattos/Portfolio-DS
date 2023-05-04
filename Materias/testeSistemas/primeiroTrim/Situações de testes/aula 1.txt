@@ -1,0 +1,45 @@
+Bernardo Augusto Ritzel de Mattos, Daniel Pedrozo e Pedro Nieto.
+Plano de testes - Steam
+
+
+
+Plano de Testes
+Encontrar jogos para compra/na biblioteca
+Comentar e postar em publicações
+Adicionar, ver e remover amigos
+Biblioteca de jogos
+Carrinho de compras
+
+Especificação do Projeto de Teste
+Sistema de cadastro e login
+Verificação de usuário e senha
+Armazenamento de dados em um BD
+Arquitetura de ambos os lados (cliente e servidor)
+Aplicação com múltiplas telas
+Funciona tanto no SO Windows quanto no Linux.
+Feito em C++ Objective-C (OS X) e Java (Android)
+
+Especificação de Casos de Teste
+Os botões de pesquisa na loja devem retornar, do BD, o jogo pesquisado. Caso não haja um jogo registrado, a saída será “Jogo não encontrado”
+Na aba de comunidade ao ser selecionada é esperado que o usuário seja direcionado para um “feed” onde ele poderá ver, curtir e comentar em publicações feitas por pessoas da comunidade. Caso haja erro é esperado que o usuário seja redirecionado para uma tela de erro onde possua a resolução do mesmo.
+Ao selecionar a opção de Biblioteca é esperado que vá para uma tela que mostre os jogos que o usuário possui, que mostre também os jogos que estão instalados ou que apenas estão na biblioteca. Caso aconteça algum erro é esperado que uma mensagem de erro apareça ou um pop-up com as informações do erro e como resolvê-lo.
+Ao clicar no botão de adicionar ao carrinho deve se esperar que apareça um pop-up de aviso que o jogo foi adicionado ao carrinho e uma opção de continuar comprando, caso de erro ao adicionar no carrinho se espera um pop-up de erro.
+Na área de amigos se espera que apareça amigos já adicionados e neles a opção de deixar de seguir, bloquear, denunciar usuário, e remover amizade, se espera que ele desapareça da área de amigos e apareça um pop-up de aviso da alteração subsequente a cada alteração feita dependendo do botão selecionado  
+
+Especificação de Procedimento de Teste
+Ter acesso à Internet
+Fazer download da Steam (Computador ou dispositivo móvel)
+Realizar a experiência do usuário
+
+Relatório de Status de Teste
+Teste de pesquisa de jogos, feito por Bernardo.
+Resultado: Página do jogo encontrado
+Teste de criação de postagens na aba Comunidade, feito por Pedro.
+Resultado: Erro de postagem. Necessita de acesso a Internet
+
+Log de Teste
+
+Relatório de Incidente de Testes
+Não houve nenhum ocorrido que pudesse alterar os testes em todo o percurso. 
+Relatório Sumário dos Testes
+Ao final das baterias de testes não foi noticiado nenhuma anomalia dentro dos escopos pré requisitados nos testes, o sistema de cadastro e login passou bem sucedido nos testes com médias avaliativas acima da média, todos os requisitos funcionais envolvendo botões e pop-ups de avisos em diversas partes das interações dentro da área de amigos e interação da comunidade. Na questão dos requisitos não funcionais todos estavam de acordo com o esperado, todos os tipos de alteração feito dentro do site eram salvas e os conteúdos dentro do site eram expostos dentro dos conformes.
