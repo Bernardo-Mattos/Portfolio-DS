@@ -1,2 +1,3 @@
-# PortfolioADS
- Portfolio Ensino Medio técnico em Analise e Desenvolvimento de Sistemas 
+## Portfólio Bernardo Mattos
+
+olá tudo bem, me chamo Bernardo Mattos e tenho 17 anos
