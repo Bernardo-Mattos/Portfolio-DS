@@ -1,11 +1,12 @@
-function returnBigger(num1, num2){
-  console.log('digite o primeiro numero')
-  var num1 = prompt('sim')
-  console.log('digite o primeiro numero')
-  var num2 = prompt('sim')
+function comparaNumeros() {
+  var num1 = prompt("Digite o primeiro número:")
+  var num2 = prompt("Digite o segundo número:")
+
   if (num1 > num2) {
-    console.log('O primeiro número é maior que o segundo')
-  }else{}
+    return "O primeiro número é maior"
+  } else {
+    return "O segundo número é maior ou igual ao primeiro"
+  }
 }
 
-console.log(returnBigger())
+console.log(comparaNumeros())
