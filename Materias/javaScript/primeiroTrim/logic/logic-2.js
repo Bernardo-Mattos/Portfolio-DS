@@ -4,9 +4,7 @@
   mensagem de erro.
 */
 
-function mostraIdade(){
-  var age = prompt('digite a sua idade para que eu possa retornar quantos dias você ja viveu')
-
+function mostraIdade(age){
   if (age > 0){
     console.log('os dias são: ', age * 365)
   } else{
@@ -14,4 +12,4 @@ function mostraIdade(){
   }
 }
 
-mostraIdade();
+mostraIdade(17)

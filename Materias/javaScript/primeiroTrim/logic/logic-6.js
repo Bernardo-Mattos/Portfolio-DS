@@ -7,12 +7,13 @@
   repetir( 4, 3 ) // retorna[4 ,4, 4]
 */
 
-function retornaArray(val, rep){
+function retornaArray(val, rep) {
   let array = []
-  for( i = 0; rep > i; i++){
+  for (i = 0; rep > i; i++) {
     array.push(val)
   }
   return array
 }
 
-console.log(retornaArray('teste', 4))
+console.log(retornaArray('teste', 2))
+console.log(retornaArray(4, 3))
