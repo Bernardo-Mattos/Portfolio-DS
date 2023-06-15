@@ -15,7 +15,6 @@ function multiplica(num1, num2){
 
 if (num1 < 0 || num2 < 0 ){
   alert('um dos numeros é negativo')
-  multiplica()
 } else {
   let res = multiplica(num1, num2)
   alert ('o resultado é : ' + res )
