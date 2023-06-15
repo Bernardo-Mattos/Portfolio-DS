@@ -1,3 +1,8 @@
+/* 
+Crie uma função que recebe 2 números como argumento e retorne se o primeiro é
+maior ou igual ao segundo.
+*/
+
 function comparaNumeros() {
   var num1 = prompt("Digite o primeiro número:")
   var num2 = prompt("Digite o segundo número:")
