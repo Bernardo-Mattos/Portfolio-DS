@@ -1,8 +1,7 @@
 /* laços de repetição:
-     dentro do javaScript podemos usar 
-     for([inicialização], [condição], [expressão final])
-
-     for in || for of
+    - dentro do javaScript podemos usar 
+    - for([inicialização], [condição], [expressão final])
+    - for in || for of
 */
 
 // for normal

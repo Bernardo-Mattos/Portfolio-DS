@@ -12,7 +12,6 @@ function numeros(numero){
     return numero.reverse()
 }
 
-console.log(numeros(5))
 
 //terceira 
 
