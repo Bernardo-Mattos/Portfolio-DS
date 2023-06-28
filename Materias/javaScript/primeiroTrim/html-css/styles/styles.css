@@ -1,5 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    background-color:#7a97ff ;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
 h1{
+    color: #ffff;
     text-align: center;
+
+}
+
+.imagens{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 img{
@@ -7,3 +33,4 @@ img{
     height: 40%;
     border-radius: 50%;
 }
+
