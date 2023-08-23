@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View, Image, TextInput } from 'react-native';
 
-export default function App() {
+ export default function App() {
   return (
     <View style={styles.container}>
       <Image style={styles.image}
