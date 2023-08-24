@@ -1,15 +1,23 @@
-import {StyleSheet, Text, View, Image, TextInput } from 'react-native';
+import {StyleSheet, Text, View, Image, TextInput, Button } from 'react-native';
 
- export default function App() {
+export default function App() {
   return (
     <View style={styles.container}>
       <Image style={styles.image}
       source={require('./assets/download.png')}
       />
       <Text style={styles.text}>Login</Text>
-      <TextInput style={styles.input}
-      placeholder='Nome'
-      ></TextInput>
+      <TextInput 
+      style={styles.input}
+      placeholder='Nome'/>
+      <TextInput
+      style={styles.input}
+      placeholder='Senha'
+      />
+      <Button style={styles.btn}
+        onPress={() => alert('Right button pressed')}
+        title="Submit"
+        />
     </View>
   )
 }
@@ -34,9 +42,15 @@ const styles = StyleSheet.create({
   input:{
     color:"#000",
     backgroundColor: '#fff',
-    width: 300,
-    height: 40,
+    width: 350,
+    height: 50,
     marginTop: 50,
-    borderRadius: 10
+    borderRadius: 10,
+    padding: 10,
+    fontSize: 15,
+  },
+  btn:{
+    marginTop:60,
+    backgroundColor: '#fff'
   }
 })
