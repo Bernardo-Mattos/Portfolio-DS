@@ -14,10 +14,12 @@ export default function App() {
       style={styles.input}
       placeholder='Senha'
       />
-      <Button style={styles.btn}
-        onPress={() => alert('Right button pressed')}
-        title="Submit"
-        />
+      <View style={styles.btn}>
+        <Button
+          title='submit'
+          color='#836FFF'
+          />
+      </View>
     </View>
   )
 }
@@ -50,7 +52,9 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   btn:{
-    marginTop:60,
-    backgroundColor: '#fff'
+    marginTop:40,
+    width: 350,
+    borderRadius: 10,
+    height: 40,
   }
 })
