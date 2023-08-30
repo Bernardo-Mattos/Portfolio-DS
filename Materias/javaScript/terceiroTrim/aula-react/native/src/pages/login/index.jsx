@@ -1,4 +1,5 @@
 import {StyleSheet, Text, View, Image, TextInput, Button} from 'react-native'
+import { Button } from '@rneui/themed';
 
 export default function login (){
   return (
@@ -9,16 +10,22 @@ export default function login (){
       <Text style={styles.text}>Login</Text>
       <TextInput 
       style={styles.input}
-      placeholder='Nome'/>
+      placeholder='sim'/>
       <TextInput
       style={styles.input}
       placeholder='Senha'
       />
       <View style={styles.btn}>
-        <Button
-          title='submit'
-          color='#836FFF'
-          />
+      <Button
+        title="Dark"
+        buttonStyle={{ backgroundColor: 'rgba(39, 39, 39, 1)' }}
+        containerStyle={{
+          width: 200,
+          marginHorizontal: 50,
+          marginVertical: 10,
+        }}
+        titleStyle={{ color: 'white', marginHorizontal: 20 }}
+        />
       </View>
     </View>
   )
@@ -56,6 +63,8 @@ export default function login (){
       width: 350,
       borderRadius: 10,
       height: 40,
+      backgroundColor: '#fff'
+
     }
   }
 )

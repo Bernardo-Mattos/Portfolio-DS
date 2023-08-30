@@ -1,5 +1,7 @@
 import {StyleSheet, Text, View, Image, TextInput, Button } from 'react-native';
 
+
+
 export default function App() {
   return (
     <View style={styles.container}>
@@ -14,10 +16,10 @@ export default function App() {
       style={styles.input}
       placeholder='Senha'
       />
-      <View style={styles.btn}>
+      <View>
         <Button
-          title='submit'
-          color='#836FFF'
+          title='sim'
+          marginTop= '400'
           />
       </View>
     </View>
@@ -56,5 +58,5 @@ const styles = StyleSheet.create({
     width: 350,
     borderRadius: 10,
     height: 40,
-  }
+  },
 })
