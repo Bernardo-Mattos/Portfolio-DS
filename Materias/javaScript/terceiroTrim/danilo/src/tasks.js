@@ -1,5 +1,5 @@
 import React from "react"
-import { View, Text, TouchableOpacity } from "react-native"
+import { StyleSheet ,View, Text, TouchableOpacity } from "react-native"
 import { FontAwesome } from '@expo/vector-icons'
 
 export default function tasks (props){
@@ -17,6 +17,10 @@ export default function tasks (props){
 }
 const styles = StyleSheet.create({
   container:{
-    backgroundColor: 'rgba(196, 196, 196 0.20)'
+    backgroundColor: 'rgba(196, 196, 196 0.20)',
+    marginTop: 12,
+    padding: 12,
+    borderRadius: 4,
+    flexDirection: 'row'  
   }
 })

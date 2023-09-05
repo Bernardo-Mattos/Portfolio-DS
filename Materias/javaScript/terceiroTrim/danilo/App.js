@@ -1,9 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput, FlatList, TouchableOpacity } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons'
 import { AntDesign } from '@expo/vector-icons'; 
+import React, { useState } from 'react';
+import tasks from './src/tasks';
 
 export default function App() {
+  const [tasks, setTasks] = useState('')
+  const [list, setList] = useState([]) 
   return (
     <View style={styles.container}>
       <Text style={styles.tt}>Lista</Text>
@@ -17,7 +20,8 @@ export default function App() {
         </TouchableOpacity>
       </View>
       <View style={styles.containerList}>
-        <FlatList/>
+        <FlatList 
+        />
       </View>
     </View>
   );
@@ -28,7 +32,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#171717',
     padding: 10,
-    /* alignItems: 'center' */
+    /* alignItems: 'center' */ // usei o align self no containerList
   },
   containerInput:{
     flexDirection: 'row',
