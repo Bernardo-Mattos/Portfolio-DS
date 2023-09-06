@@ -1,26 +1,40 @@
 import { StyleSheet, Text, View, TextInput, FlatList, TouchableOpacity } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons'
 import { AntDesign } from '@expo/vector-icons'; 
 import React, { useState } from 'react';
 import tasks from './src/tasks';
 
 export default function App() {
   const [tasks, setTasks] = useState('')
-  const [list, setList] = useState([]) 
+  const [list, setList] = useState([])
+
+  function handleAdd(){
+    if (tasks === ''){
+      return
+    }
+    const data = {
+      key: Date.now(),
+      item: tasks
+    }
+    setList(oldArray => [data, ...oldArray])
+    setTasks('')
+  }
+
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.tt}>Lista</Text> /* titulo */
-      <View style={styles.containerInput}>
+    <View style={styles.container}> 
+      <Text style={styles.tt}>Lista</Text> 
+      <View style={styles.containerInput}> 
         <TextInput 
         placeholder="Digite o nome do produto" 
         style={styles.input}
-        />
-        <TouchableOpacity style={styles.btn}>
+        /> 
+        <TouchableOpacity style={styles.btn}> 
          <AntDesign name="plus" size={24} color="white" />
         </TouchableOpacity>
       </View>
-      <View style={styles.containerList}>
+      <View style={styles.containerList}> 
         <FlatList 
+        style={styles.list}
         />
       </View>
     </View>
@@ -32,7 +46,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#171717',
     padding: 10,
-    /* alignItems: 'center' */ // usei o align self no containerList
   },
   containerInput:{
     flexDirection: 'row',
