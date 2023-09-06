@@ -9,7 +9,7 @@ export default function App() {
   const [list, setList] = useState([]) 
   return (
     <View style={styles.container}>
-      <Text style={styles.tt}>Lista</Text>
+      <Text style={styles.tt}>Lista</Text> /* titulo */
       <View style={styles.containerInput}>
         <TextInput 
         placeholder="Digite o nome do produto" 
