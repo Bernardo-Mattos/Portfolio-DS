@@ -14,7 +14,7 @@ function App() {
         </p>
         <img src="https://i.redd.it/xgn9cucxz8hb1.jpg" alt="eu sabo"/>
         <Button content='sim mamae'/>
-        <horaCerta />
+        <horaCerta/>
       </main>
     </div>
 

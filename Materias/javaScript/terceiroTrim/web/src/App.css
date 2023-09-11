@@ -8,10 +8,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 img{
   border-radius: 50%;
   width: 200px !important ;
   height:200px !important;
+  position: relative;
+  animation: mymove 3s infinite;
+  animation-direction: alternate;
+}
+@keyframes mymove {
+  from {left: -290%;}
+  to {left: 290%;}
 }

@@ -21,9 +21,3 @@ form{
   justify-content: center;
   flex-direction: column-reverse;
 }
-.container{
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
