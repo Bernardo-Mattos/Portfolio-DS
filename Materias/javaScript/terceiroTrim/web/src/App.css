@@ -1,0 +1,17 @@
+.app{
+  width: 100%;
+  height: 100vh;
+  background: rgb(246,138,255);
+  background: linear-gradient(90deg, rgba(246,138,255,1) 0%, rgba(255,0,249,1) 33%, rgba(116,9,121,1) 94%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  border-radius: 50%;
+  width: 200px !important ;
+  height:200px !important;
+}

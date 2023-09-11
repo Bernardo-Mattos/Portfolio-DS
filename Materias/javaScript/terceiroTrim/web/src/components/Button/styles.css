@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0; 
+  display: border-box;
+}
+button{
+  margin:15px auto;
+  border: none; 
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+  border-radius: 10px 10px 0px 10px;
+  -moz-border-radius: 10px 10px 0px 10px;
+  -webkit-border-radius: 10px 10px 0px 10px;
+  border: 0px solid #000000;
+}
+form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+.container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
