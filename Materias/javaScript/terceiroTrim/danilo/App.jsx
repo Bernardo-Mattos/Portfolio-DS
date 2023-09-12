@@ -7,6 +7,17 @@ import tasks from './src/tasks';
 export default function App() {
   const [tasks, setTasks] = useState('')
   const [list, setList] = useState([]) 
+  function handleAdd(){
+    if(tasks === ''){
+      return
+    }
+    const dados = {
+      key: Date.now(),
+      items: tasks
+    }
+    setList(oldArray => [dados, ...oldArray])
+    setTasks('')
+  }
   return (
     <View style={styles.container}>
       <Text style={styles.tt}>Lista</Text>
@@ -15,7 +26,7 @@ export default function App() {
         placeholder="Digite o nome do produto" 
         style={styles.input}
         />
-        <TouchableOpacity style={styles.btn}>
+        <TouchableOpacity style={styles.btn} onPress={handleAdd()}>
          <AntDesign name="plus" size={24} color="white" />
         </TouchableOpacity>
       </View>
