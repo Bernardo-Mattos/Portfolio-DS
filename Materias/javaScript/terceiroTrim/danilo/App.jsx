@@ -32,6 +32,10 @@ export default function App() {
       </View>
       <View style={styles.containerList}>
         <FlatList 
+        data={list}
+        keyExtractor={(item) => item.key}
+        style={styles.list}
+        renderItem={({item})=> <tasks data={item}/>}
         />
       </View>
     </View>

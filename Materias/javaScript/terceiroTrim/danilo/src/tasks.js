@@ -2,7 +2,7 @@ import React from "react"
 import { StyleSheet ,View, Text, TouchableOpacity } from "react-native"
 import { FontAwesome } from '@expo/vector-icons'
 
-export default function tasks (props){
+export default function tasks ({data}){
   return(
     <View style={styles.container}>
       <TouchableOpacity style={styles.btn}>
@@ -12,6 +12,7 @@ export default function tasks (props){
           color='#000'
         />
       </TouchableOpacity>
+      <Text>{ data.item }</Text>
     </View>
   )
 }
