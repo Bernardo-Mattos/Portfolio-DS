@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import Task from './src/tasks';
 
 export default function App() {
-  const [taskText, setTaskText] = useState(''); // Renomeei para evitar conflito de nomes
-  const [taskList, setTaskList] = useState([]); // Renomeei para evitar conflito de nomes
+  const [taskText, setTaskText] = useState(''); 
+  const [taskList, setTaskList] = useState([]); 
 
   function handleAdd() {
     if (taskText === '') {
@@ -33,8 +33,8 @@ export default function App() {
         <TextInput 
           placeholder="Digite o nome do produto" 
           style={styles.input}
-          value={taskText} // Use o valor do estado para o texto de entrada
-          onChangeText={setTaskText} // Atualize o estado com o texto de entrada
+          value={taskText}
+          onChangeText={setTaskText} 
         />
         <TouchableOpacity style={styles.btn} onPress={handleAdd}> 
          <AntDesign name="plus" size={24} color="white" />
