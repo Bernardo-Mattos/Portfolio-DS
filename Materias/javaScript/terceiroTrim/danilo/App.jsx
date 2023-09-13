@@ -1,42 +1,52 @@
 import { StyleSheet, Text, View, TextInput, FlatList, TouchableOpacity } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons'
 import { AntDesign } from '@expo/vector-icons'; 
 import React, { useState } from 'react';
-import tasks from './src/tasks';
+import Task from './src/tasks';
 
 export default function App() {
-  const [tasks, setTasks] = useState('')
-  const [list, setList] = useState([]) 
-  function handleAdd(){
-    if(tasks === ''){
-      return
+  const [taskText, setTaskText] = useState(''); // Renomeei para evitar conflito de nomes
+  const [taskList, setTaskList] = useState([]); // Renomeei para evitar conflito de nomes
+
+  function handleAdd() {
+    if (taskText === '') {
+      return;
     }
-    const dados = {
-      key: Date.now(),
-      items: tasks
-    }
-    setList(oldArray => [dados, ...oldArray])
-    setTasks('')
+  
+    const newTask = {
+      key: Date.now().toString(),
+      items: taskText,
+    };
+  
+    setTaskList((oldList) => [newTask, ...oldList]);
+    setTaskText('');
   }
+
+  function handleDelete(key) {
+    const updatedList = taskList.filter((task) => task.key !== key);
+    setTaskList(updatedList);
+  }
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.tt}>Lista</Text>
-      <View style={styles.containerInput}>
+    <View style={styles.container}> 
+      <Text style={styles.tt}>Lista</Text> 
+      <View style={styles.containerInput}> 
         <TextInput 
-        placeholder="Digite o nome do produto" 
-        style={styles.input}
+          placeholder="Digite o nome do produto" 
+          style={styles.input}
+          value={taskText} // Use o valor do estado para o texto de entrada
+          onChangeText={setTaskText} // Atualize o estado com o texto de entrada
         />
-        <TouchableOpacity style={styles.btn} onPress={handleAdd()}>
+        <TouchableOpacity style={styles.btn} onPress={handleAdd}> 
          <AntDesign name="plus" size={24} color="white" />
         </TouchableOpacity>
       </View>
-      <View style={styles.containerList}>
-        <FlatList 
-        data={list}
+      <View style={styles.containerList}> 
+      <FlatList 
+        data={taskList}
         keyExtractor={(item) => item.key}
         style={styles.list}
-        renderItem={({item})=> <tasks data={item}/>}
-        />
+        renderItem={({ item }) => <Task item={item} onDelete={handleDelete} />}
+      />
       </View>
     </View>
   );
@@ -47,7 +57,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#171717',
     padding: 10,
-    /* alignItems: 'center' */ // usei o align self no containerList
   },
   containerInput:{
     flexDirection: 'row',
