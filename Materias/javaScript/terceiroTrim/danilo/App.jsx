@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, TextInput, FlatList, TouchableOpacity } from 'react-native';
 import { AntDesign } from '@expo/vector-icons'; 
 import React, { useState } from 'react';
-import tasks from './src/tasks';
+import { tasks } from './src/tasks';
 
 export default function App() {
   const [tasks, setTasks] = useState('')
@@ -28,13 +28,15 @@ export default function App() {
         placeholder="Digite o nome do produto" 
         style={styles.input}
         /> 
-        <TouchableOpacity style={styles.btn}> 
+        <TouchableOpacity style={styles.btn} onPress={handleAdd}> 
          <AntDesign name="plus" size={24} color="white" />
         </TouchableOpacity>
       </View>
       <View style={styles.containerList}> 
         <FlatList 
         style={styles.list}
+        data={list} // Passa a lista de tarefas para a FlatList
+        renderItem={({ item }) => <Text>{item.item}</Text>} // Renderiza os itens da lista
         />
       </View>
     </View>
