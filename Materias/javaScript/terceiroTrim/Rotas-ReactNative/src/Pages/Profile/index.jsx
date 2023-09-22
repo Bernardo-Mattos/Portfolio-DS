@@ -1,11 +1,11 @@
-import { View, Text, StyleSheet } from "react-native";
-import React from "react";
+import { View, Text } from 'react-native'
+import React from 'react'
 import buttonsNav from '../Components/buttons'
 
-export default function Welcome({navigation}) {
+export default function Profile({navigation}) {
   return (
     <View style={styles.container}>
-      <Text>Welcome</Text>
+      <Text>Profile</Text>
       <buttonsNav 
         navigation={navigation}
         txt= 'Cadastro'
@@ -13,8 +13,8 @@ export default function Welcome({navigation}) {
       />
       <buttonsNav 
         navigation={navigation}
-        txt= 'Profile'
-        nav='Profile'
+        txt= 'Login'
+        nav='Login'
       />
       <buttonsNav 
         navigation={navigation}
@@ -23,8 +23,8 @@ export default function Welcome({navigation}) {
       />
       <buttonsNav 
         navigation={navigation}
-        txt='Login'
-        nav='Login'
+        txt='Welcome'
+        nav='Welcome'
       />
     </View>
   )
