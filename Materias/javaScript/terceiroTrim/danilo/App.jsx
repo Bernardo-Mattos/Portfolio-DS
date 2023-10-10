@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, TextInput, FlatList, TouchableOpacity } from 'react-native';
 import { AntDesign } from '@expo/vector-icons'; 
 import React, { useState } from 'react';
-import Task from './src/tasks';
+import { Task } from './src/tasks';
 
 export default function App() {
   const [taskText, setTaskText] = useState(''); 
