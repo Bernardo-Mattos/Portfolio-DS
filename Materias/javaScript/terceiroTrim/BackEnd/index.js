@@ -1,4 +1,9 @@
 const express = require('express')
-console.log(express);
+
+const server = express();
+
+server.get('./curso' , ()=> {
+  console.log("Curso acessado")
+})
 
 server.listen(3001)
