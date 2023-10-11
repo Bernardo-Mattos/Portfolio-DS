@@ -2,7 +2,7 @@ const express = require('express');
 
 const server = express();
 
-const cursos = [ 'java' , 'js' , 'c#' , 'c++' ]
+const cursos = []
 server.use(express.json());
 
 //read
@@ -41,7 +41,7 @@ server.delete('/cursos/:index', (req, res) => {
   // Use splice para remover o elemento no índice especificado
   cursos.splice(index, 1);
 
-  return res.json(cursos);
+  return res.json('ta deletado meu padrinho');
 });
 
 server.listen(3001);
